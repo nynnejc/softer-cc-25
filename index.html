@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Softer Creative Coding Course</title>
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- Burger icon -->
+    <label for="menu-toggle" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Sidebar Navbar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="./index.html">Index</a>
+            <a href="./intro.html">Intro</a>
+            <a href="./softercc.html">Creative Coding I</a>
+            <a href="#">Creative Coding II</a>
+        </div>
+    </nav>
+    <div class="top-index">
+        <h1>Softer Creative Coding Spring 2025</h1>
+    </div>
+    <p>.</p>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navbar');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
