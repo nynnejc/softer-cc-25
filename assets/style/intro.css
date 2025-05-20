@@ -44,7 +44,7 @@ h1 {
 h2 {
     font-family: 'whoismono';
     font-size: 1.5rem;
-    color: #FF3B0F;
+    color: black;
     margin-top: 7%;
 }
 
@@ -302,7 +302,9 @@ a.img-circles>img:hover,
 .slide-10,
 .slide-11,
 .slide-12,
-.slide-13 {
+.slide-13,
+.slide-14,
+.slide-15 {
     background: #f9f5f5;
 }
 
@@ -310,4 +312,10 @@ a.img-circles>img:hover,
 .slide-8,
 .slide-9 {
     background: #ffffff;
+}
+
+.text-slide {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
