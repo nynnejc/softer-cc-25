@@ -44,6 +44,8 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 0;
   pointer-events: none;
 }
@@ -51,22 +53,21 @@ canvas {
 
 h1 {
   font-family: 'Inter', sans-serif;
-  font-size: clamp(4rem, 6vw, 5.5rem);
+    font-size: 400%;
 }
 
 h2 {
   font-family: 'Inter', sans-serif;
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-size: 300%;
 }
 
 h3 {
   font-family: 'Inter', sans-serif;
-  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-size: 200%;
 }
 
 p {
-  font-size: clamp(0.5rem, 1vw, 1rem);
-  /* (min size, preferred size based on virwport, max size) */
+  margin: 25px 0 20px;
 }
 
 li {

@@ -3,7 +3,7 @@ let altColors;
 let circleRadius;
 
 function setup() {
-  createCanvas(windowWidth, document.body.scrollHeight);
+  createCanvas(windowWidth, windowHeight);
   noStroke();
   setCircleRadius();
 
@@ -73,7 +73,7 @@ function drawFilteredCircle() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, document.body.scrollHeight);
+  resizeCanvas(windowWidth, windowHeight);
   setCircleRadius();
 }
 
