@@ -8,18 +8,17 @@ function setup() {
   setCircleRadius();
 
   bgColors = {
-    tl: '#FFA4E0',  // top-left pink
+    tl: '#ebc9f2',  // top-left lilla
     tr: '#F3EEEA',  // top-right hvid
     br: '#F3EEEA',  // bottom-right hvid
-    bl: '#ebc9f2'  // bottom-left lilla
+    bl: '#FFA4E0'  // bottom-left pink
   };
 
   altColors = {
-    tl: '#FF3B0F',  // rød
+    tl: '#F3EEEA',  // hvid
     tr: '#FFA4E0',  // pink
     br: '#FFA4E0',  // pink
-    bl: '#F3EEEA'  // hvid
-
+    bl: '#FF3B0F'  // rød
   };
 }
 
