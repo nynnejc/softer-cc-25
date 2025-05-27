@@ -1,69 +1,86 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
-    min-height: 100vh;
-  }
+body {
+  min-height: 100vh;
+}
 
-  body {
-    min-height: 100vh;
-  }
+.frontpage-text {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
 
-  .frontpage-text {
-    gap: 2rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  
-  #canvas {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    margin: 0 auto;
-  }
+.text-block {
+  padding: 3%;
+}
 
-  canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    pointer-events: none;
-  }
-  
+.code-block {
+  background: #5A5475;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
 
-  h1 {
-    font-family: 'Inter', sans-serif;
-    font-size: clamp(4.5rem, 8vw, 6rem);
-  }
+.code-text {
+  color: #FFED77;
+  margin-left: 2%;
 
-  h2 {
-    font-family: 'Inter', sans-serif;
-    font-size: clamp(3rem, 6vw, 4rem);
-  }
+}
 
-  h3 {
-    font-family: 'Inter', sans-serif;
-    font-size: clamp(2.5rem, 4vw, 2.5rem);
-  }
-  p {
-   font-size: clamp(1rem, 2.5vw, 2rem);  /* (min size, preferred size based on virwport, max size) */
-  }
+#canvas {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  li {
-    margin: 0%;
-  }
-  
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
 
-  p a:hover {
-    color: blue;
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(4rem, 6vw, 5.5rem);
+}
+
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+}
+
+p {
+  font-size: clamp(0.5rem, 1vw, 1rem);
+  /* (min size, preferred size based on virwport, max size) */
+}
+
+li {
+  margin: 0%;
+}
+
+
+p a:hover {
+  color: blue;
 }
 
 ::selection {
-    background: blue;
-    color: #FF3B0F;
+  background: blue;
+  color: #FF3B0F;
 }
 
 .burger {
@@ -94,7 +111,7 @@
   left: 0;
   width: 200px;
   height: 100vh;
-  background-color: #FEE8DD;
+  background-color: #F3EEEA;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +123,7 @@
   z-index: 1000;
 }
 
-#menu-toggle:checked ~ .layout .navbar {
+#menu-toggle:checked~.layout .navbar {
   transform: translateX(0);
 }
 
